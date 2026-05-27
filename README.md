@@ -2,7 +2,7 @@
 # Real-Time Crop Disease Detection & Targeted Pesticide Dispensing
 
 Autonomous agricultural robot using YOLOv8n + Raspberry Pi for 
-real-time Late Blight detection and targeted pesticide spraying — 
+real-time Late Blight detection and targeted pesticide spraying, 
 no chemicals wasted on healthy plants.
 
 ## Status
