@@ -27,13 +27,14 @@ An AI-powered autonomous robot that:
 
 ## Key Results
 
-| Model    | mAP@0.5 | mAP@0.95 | F1 Score |
-|----------|---------|----------|----------|
-| YOLOv8n ✅ | 0.707   | —        | 0.71     |
-| YOLOv5n  | 0.703   | —        | 0.73     |
-
-- Healthy_Leaf Average Precision: ~0.994 (both models)
-- YOLOv8n selected for better real-time stability
+| Metric | Value |
+|--------|-------|
+| mAP@0.5 | 0.710 |
+| mAP@0.5-95 | 0.570 |
+| Precision | 0.807 |
+| Recall | 0.675 |
+| Training images | 3,505 |
+| Validation images | 528 |
 
 ## Hardware Components
 
