@@ -1,14 +1,12 @@
-
 # Real-Time Crop Disease Detection & Targeted Pesticide Dispensing
 
-Autonomous agricultural robot using YOLOv8n + Raspberry Pi for 
-real-time Late Blight detection and targeted pesticide spraying, 
+Autonomous agricultural robot using YOLOv8n + Raspberry Pi for
+real-time Late Blight detection and targeted pesticide spraying,
 no chemicals wasted on healthy plants.
 
 ## Status
-🔧 Phase 1 Complete — Model trained and evaluated.
-   Physical hardware build in progress (Phase 2)
-
+🔧 Phase 1 Complete - Model trained and evaluated.
+   Physical hardware build in progress (Phase 2).
 
 ## Problem
 Traditional pesticide spraying covers entire fields blindly, causing:
@@ -18,7 +16,7 @@ Traditional pesticide spraying covers entire fields blindly, causing:
 
 This robot detects only infected leaves and sprays only those spots.
 
-## Model Performance
+## Model Performance (YOLOv8n)
 
 | Metric | Value |
 |--------|-------|
@@ -31,42 +29,43 @@ This robot detects only infected leaves and sprays only those spots.
 | Epochs | 50 |
 | Image size | 512×512 |
 
-Both models achieved ~0.994 Average Precision on healthy leaf detection.
-YOLOv8n selected for better real-time inference stability.
-
-## Hardware
-
-- **Raspberry Pi 4B** — image processing + YOLOv8n inference
-- **Arduino Uno + L298N** — 4WD robotic platform control  
-- **ESP32** — spraying system control
-- **R385 Diaphragm Pump + Solenoid Valve + Nozzle** — precision dispensing
-- **1.2 MPa Pressure Transducer** — pressure monitoring
-
 ## How It Works
 
 1. Robot moves through the field on a 4WD platform
 2. Camera continuously captures leaf images
-3. YOLOv8n model running on Raspberry Pi detects Late Blight in real time
-4. On detection, Raspberry Pi signals ESP32 to trigger the spray mechanism
+3. YOLOv8n model on Raspberry Pi detects Late Blight in real time
+4. On detection, Raspberry Pi signals ESP32 to trigger spray mechanism
 5. Pesticide is sprayed only on the infected region
+
+## Hardware
+
+| Component | Role |
+|-----------|------|
+| Raspberry Pi 4B | Image processing + YOLOv8n inference |
+| Arduino Uno + L298N | 4WD robot movement control |
+| ESP32 | Spraying system control |
+| R385 Diaphragm Pump | Pesticide flow |
+| Solenoid Valve | Electronic spray switch |
+| 1.2 MPa Pressure Transducer | Pressure monitoring |
+| Pi Camera Module | Live leaf image capture |
 
 ## Dataset & Training
 
 - **Dataset**: Kaggle PlantDisease + agricultural sources
-- **Annotation tool**: LabelImg (Healthy_Leaf / Late_Blight classes)
-- **Training platform**: Google Colab with NVIDIA Tesla T4 GPU
-- **Epochs**: 50 | **Image size**: 512×512
-- **Framework**: Ultralytics YOLO
+- **Classes**: Healthy_Leaf, Late_Blight
+- **Annotation tool**: LabelImg
+- **Platform**: Google Colab, NVIDIA Tesla T4 GPU
+- **Framework**: Ultralytics YOLOv8
 
 ## Tech Stack
 
-`Python` `YOLOv8` `YOLOv5` `Raspberry Pi` `Arduino` `ESP32` `OpenCV` `Google Colab`
+`Python` `YOLOv8` `Raspberry Pi` `Arduino` `ESP32` `OpenCV` `Google Colab`
 
 ## Academic Context
 
-**B.E. Project — Electronics & Communication Engineering**  
-BMS Institute of Technology and Management, Bengaluru  
-Visvesvaraya Technological University | 2025–26  
+**B.E. Project : Electronics & Communication Engineering**
+BMS Institute of Technology and Management, Bengaluru
+Visvesvaraya Technological University | 2025–26
 Guide: Dr. Shivarudraiah B
 
 ## Team
