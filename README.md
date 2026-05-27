@@ -20,10 +20,16 @@ This robot detects only infected leaves and sprays only those spots.
 
 ## Model Performance
 
-| Model    | mAP@0.5 | F1 Score | Confidence |
-|----------|---------|----------|------------|
-| YOLOv8n ✅ | 0.707   | 0.71     | 0.308      |
-| YOLOv5n  | 0.703   | 0.73     | 0.294      |
+| Metric | Value |
+|--------|-------|
+| mAP@0.5 | 0.710 |
+| mAP@0.5-95 | 0.570 |
+| Precision | 0.807 |
+| Recall | 0.675 |
+| Training images | 3,505 |
+| Validation images | 528 |
+| Epochs | 50 |
+| Image size | 512×512 |
 
 Both models achieved ~0.994 Average Precision on healthy leaf detection.
 YOLOv8n selected for better real-time inference stability.
