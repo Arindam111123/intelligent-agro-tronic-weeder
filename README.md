@@ -8,6 +8,10 @@ no chemicals wasted on healthy plants.
 🔧 Phase 1 Complete - Model trained and evaluated.
    Physical hardware build in progress (Phase 2).
 
+## Training Notebook
+Full training pipeline, evaluation results, and visualizations:
+notebooks/YOLOv8n_training_notebook.ipynb
+
 ## Problem
 Traditional pesticide spraying covers entire fields blindly, causing:
 - Chemical overuse and soil degradation
