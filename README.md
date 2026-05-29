@@ -9,6 +9,8 @@ no chemicals wasted on healthy plants.
    Physical hardware build in progress (Phase 2).
 
 ## Training Notebook
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Arindam111123/intelligent-agro-tronic-weeder/blob/main/notebooks/YOLOv8n_training_notebook.ipynb)
+
 Full training pipeline, evaluation results, and visualizations:
 notebooks/YOLOv8n_training_notebook.ipynb
 
